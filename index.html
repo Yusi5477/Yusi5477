@@ -4,8 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Educational Tips</title>
-  <style>
-    body {
+  <style><style>
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+  }
+
+  [data-theme="dark"] {
+    --bg-color: #1e1e1e;
+    --text-color: #ffffff;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 6px 12px;
+    background: none;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  </style>
+    body {<button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
       font-family: Arial, sans-serif;
       background-color: #f4f6f8;
       margin: 0;
@@ -158,5 +186,18 @@
     &copy; 2025 Educational Tips. All rights reserved.
   </footer>
 
-</body>
+</body><script>
+  function toggleTheme() {
+    const current = document.documentElement.getAttribute("data-theme");
+    const newTheme = current === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+  }
+
+  // Load saved theme
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) {
+    document.documentElement.setAttribute("data-theme", savedTheme);
+  }
+</script>
 </html>
