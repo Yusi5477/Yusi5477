@@ -18,6 +18,10 @@
       padding: 30px 20px;
       text-align: center;
     }
+    .logo-text {
+      font-size: 2.5em;
+      font-weight: bold;
+    }
     main {
       padding: 20px;
     }
@@ -27,6 +31,20 @@
     h2 {
       color: #2d89ef;
     }
+    .button-group a {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 12px 20px;
+      background-color: #2d89ef;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .button-group a:hover {
+      background-color: #1b5fad;
+    }
     footer {
       background-color: #222;
       color: #ccc;
@@ -34,16 +52,12 @@
       padding: 15px;
       font-size: 14px;
     }
-    a {
-      color: #2d89ef;
-      text-decoration: none;
-    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Educational Tips</h1>
+    <div class="logo-text">Educational Tips</div>
     <p>Technology, World News & Fun Learning</p>
   </header>
 
@@ -64,8 +78,11 @@
     </section>
 
     <section>
-      <h2>Stay Connected</h2>
-      <p>Follow us for regular updates and fresh content. Want to collaborate or suggest a topic? <a href="#">Contact us here</a>.</p>
+      <h2>Follow Us</h2>
+      <div class="button-group">
+        <a href="https://t.me/ethionewsclub" target="_blank">Join on Telegram</a>
+        <a href="https://www.youtube.com/@Realityshow54" target="_blank">Watch on YouTube</a>
+      </div>
     </section>
   </main>
 
