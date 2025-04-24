@@ -26,10 +26,11 @@
       padding: 20px;
     }
     section {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
     h2 {
       color: #2d89ef;
+      margin-bottom: 10px;
     }
     .button-group a {
       display: inline-block;
@@ -44,6 +45,35 @@
     }
     .button-group a:hover {
       background-color: #1b5fad;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .category-tag {
+      background-color: #e0e7ff;
+      color: #2d2d87;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+    .post {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .post h3 {
+      margin-top: 0;
+      color: #222;
+    }
+    .post p {
+      margin-bottom: 0;
     }
     footer {
       background-color: #222;
@@ -64,7 +94,7 @@
   <main>
     <section>
       <h2>Welcome!</h2>
-      <p>Discover the latest updates in technology, world events, and helpful tips for your digital life. We also share entertaining videos to make learning fun!</p>
+      <p>Discover the latest updates in technology, world events, finance insights, and helpful digital tips. We also share fun and educational videos to keep you informed and entertained!</p>
     </section>
 
     <section>
@@ -72,17 +102,52 @@
       <ul>
         <li>Technology news & tutorials</li>
         <li>World news highlights</li>
-        <li>Technical tips for everyday use</li>
-        <li>Entertainment + learning videos</li>
+        <li>Finance tips and tools</li>
+        <li>Entertaining & educational videos</li>
       </ul>
     </section>
 
     <section>
-      <h2>Follow Us</h2>
+      <h2>Categories</h2>
+      <div class="categories">
+        <span class="category-tag">World News</span>
+        <span class="category-tag">Tech</span>
+        <span class="category-tag">Finance</span>
+        <span class="category-tag">Entertainment</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Latest Posts</h2>
+
+      <div class="post">
+        <h3>How AI Is Changing the Tech World</h3>
+        <p>A quick look at how artificial intelligence is reshaping business, learning, and everyday tools. (Placeholder)</p>
+      </div>
+
+      <div class="post">
+        <h3>Top 3 Money Tips for 2025</h3>
+        <p>Simple finance tricks that help you save smarter and spend wisely. (Placeholder)</p>
+      </div>
+
+      <div class="post">
+        <h3>World News: Key Events This Week</h3>
+        <p>A snapshot of the biggest headlines around the globe. (Placeholder)</p>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>Stay Connected</h2>
       <div class="button-group">
         <a href="https://t.me/ethionewsclub" target="_blank">Join on Telegram</a>
         <a href="https://www.youtube.com/@Realityshow54" target="_blank">Watch on YouTube</a>
       </div>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <p>Email us at <a href="mailto:yusinew5477@gmail.com">yusinew5477@gmail.com</a></p>
     </section>
   </main>
 
