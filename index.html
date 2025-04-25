@@ -35,7 +35,21 @@
       padding: 12px 20px; background-color: #2d89ef; color: white;
       border-radius: 5px; text-decoration: none; font-weight: bold;
       transition: background 0.3s ease;
-    }
+    }.button-group a {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  padding: 12px 20px;
+  background-color: #2d89ef;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.button-group a:hover {
+  background-color: #1b5fad;
+}
     .button-group a:hover { background-color: #1b5fad; }
     ul { padding-left: 20px; }
     .categories { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -133,6 +147,14 @@
 
   <footer>
     &copy; 2025 Educational Tips | Built with GitHub Pages
+  </footer>
+  <footer>
+  <p>Follow us:</p>
+  <div class="button-group">
+    <a href="https://t.me/ethionewsclub" target="_blank">Telegram</a>
+    <a href="https://www.youtube.com/@Realityshow54" target="_blank">YouTube</a>
+  </div>
+  <p>&copy; 2025 Educational Tips. All rights reserved.</p>
   </footer>
 
 </body>
