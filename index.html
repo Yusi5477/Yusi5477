@@ -5,7 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Educational Tips</title>
 
-  <style>
+  <style> .dark-mode {
+  background-color: #1c1c1c;
+  color: #eee;
+}
+.dark-mode header {
+  background-color: #333;
+  color: #eee;
+}
+.dark-mode .post {
+  background-color: #2b2b2b;
+}
+.dark-mode .button-group a {
+  background-color: #444;
+  color: #eee;
+}
+.dark-mode footer {
+  background-color: #111;
+  color: #aaa;
+}
     body { font-family: Arial, sans-serif; background-color: #f4f6f8; color: #333; margin: 0; padding: 0; }
     header { background-color: #2d89ef; color: white; padding: 30px 20px; text-align: center; }
     .logo-text { font-size: 2.5em; font-weight: bold; }
@@ -36,11 +54,19 @@
     footer { background-color: #222; color: #ccc; text-align: center; padding: 15px; font-size: 14px; }
   </style>
 </head>
+  <script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+  }
+  </script>
 <body>
 
   <header>
     <div class="logo-text">Educational Tips</div>
     <p>World news, tech, finance & entertainment</p>
+    <button onclick="toggleDarkMode()" style="margin-top: 10px; padding: 10px 15px; border: none; border-radius: 5px; background-color: white; color: black; font-weight: bold; cursor: pointer;">
+  Toggle Dark Mode
+    </button>
   </header>
 
   <main>
